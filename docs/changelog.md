@@ -5,6 +5,12 @@
 ## Changelog
 
 
+### v0.6.0 Alpha release
+
+- Provide information for the novelyst v0.50+ Plugin Manager.
+
+Compatibility: novelyst v0.42 API
+
 ### v0.4.0 Alpha release
 
 - Provide online help.
