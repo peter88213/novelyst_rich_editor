@@ -40,6 +40,20 @@ The plugin adds an "Edit" entry to the *novelyst* "Scene" menu.
 
 *Be sure not to nest markup by accident.*
 
+#### A note about formatting text
+
+It is assumed that very few types of text markup are needed for a novel text:
+
+- *Emphasized* (shown as italics).
+- *Strongly emphasized' (shown as bold).
+- *Citation* (paragraph visually distinguished from body text).
+
+When exporting to ODT format, *novelyst* replaces these formattings as follows: 
+
+- Italic text is formatted as *Emphasized*.
+- Bold text is formatted as *Strong emphasized*. 
+- Paragraphs starting with `> ` are formatted as *Quote*.
+
 ### Undo/Redo
 
 - **Ctrl-Z** undoes the last editing. Multiple undo is possible.
@@ -78,4 +92,9 @@ Via **File > Split at cursor position** or **Ctrl-Alt-S** you can split the scen
 - You can exit via **File > Exit**, or with **Ctrl-Q**.
 - When exiting the program, you will be asked for applying changes.
 
+## License
+
+This is Open Source software, and the *novelyst_rich_editor* plugin is licenced under GPLv3. See the
+[GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
+details, or consult the [LICENSE](https://github.com/peter88213/novelyst_rich_editor/blob/main/LICENSE) file.
 
