@@ -44,14 +44,14 @@ The plugin adds an "Edit" entry to the *novelyst* "Scene" menu.
 
 It is assumed that very few types of text markup are needed for a novel text:
 
-- *Emphasized* (shown as italics).
-- *Strongly emphasized* (shown as bold).
+- *Emphasized* (usually shown as italics).
+- *Strongly emphasized* (usually shown as capitalized).
 - *Citation* (paragraph visually distinguished from body text).
 
 When exporting to ODT format, *novelyst* replaces these formattings as follows: 
 
 - Italic text is formatted as *Emphasized*.
-- Bold text is formatted as *Strong emphasized*. 
+- Bold text is formatted as *Strongly emphasized*. 
 - Paragraphs starting with `> ` are formatted as *Quote*.
 
 ### Undo/Redo
