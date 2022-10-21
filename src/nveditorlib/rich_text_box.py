@@ -9,6 +9,16 @@ import tkinter as tk
 from tkinter import scrolledtext
 from tkinter import font as tkFont
 
+#--- Regular expressions for counting words and characters like in LibreOffice.
+# See: https://help.libreoffice.org/latest/en-GB/text/swriter/guide/words_count.html
+
+ADDITIONAL_WORD_LIMITS = re.compile('--|—|–')
+# this is to be replaced by spaces, thus making dashes and dash replacements word limits
+
+NO_WORD_LIMITS = re.compile('\[.+?\]|\/\*.+?\*\/|-|^\>', re.MULTILINE)
+# this is to be replaced by empty strings, thus excluding markup and comments from
+# word counting, and making hyphens join words
+
 
 class RichTextBox(scrolledtext.ScrolledText):
     """A text box applying formatting.
@@ -106,12 +116,9 @@ class RichTextBox(scrolledtext.ScrolledText):
 
     def count_words(self):
         """Return the word count."""
-        text = re.sub('--|—|–|…', ' ', self.get('1.0', tk.END))
-        # Make dashes separate words
-        text = re.sub('\[.+?\]|\/\*.+?\*\/|\.|\,|-', '', text)
-        # Remove comments and yWriter raw markup for word count; make hyphens join words
-        wordList = text.split()
-        return len(wordList)
+        text = ADDITIONAL_WORD_LIMITS.sub(' ', self.get('1.0', tk.END))
+        text = NO_WORD_LIMITS.sub('', text)
+        return len(text.split())
 
     def italic(self, event=None):
         """Toggle italic for the selection."""

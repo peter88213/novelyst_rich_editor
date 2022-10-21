@@ -5,6 +5,13 @@
 ## Changelog
 
 
+### v0.9.0 Alpha release
+
+- Apply the live word count status to all new editor instances.
+- Count words like in LibreOffice. See: https://help.libreoffice.org/latest/en-GB/text/swriter/guide/words_count.html
+
+Compatibility: novelyst v1.0.0 API
+
 ### v0.8.0 Alpha release
 
 - Release under the GPLv3 license.
