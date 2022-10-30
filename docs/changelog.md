@@ -5,6 +5,12 @@
 ## Changelog
 
 
+### v2.0.0
+
+- API upgrade.
+
+Compatibility: novelyst v2.0.0 API
+
 ### v0.9.0 Alpha release
 
 - Apply the live word count status to all new editor instances.
