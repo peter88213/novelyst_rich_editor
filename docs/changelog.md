@@ -5,7 +5,13 @@
 ## Changelog
 
 
-v3.0.0
+### v4.0.0
+
+- API update. 
+
+Compatibility: novelyst v4.0 API
+
+### v3.0.0
 
 - Code optimization and library update. 
 
