@@ -20,7 +20,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
     - Key shortcuts for bold and italic formatting.
     - Split the scene at the cursor position.
 
-*Note:* If you rather have a "full markup" scene editor, you might wish to try the [novelyst_editor](https://peter88213.github.io/novelyst_editor) plugin.
+*Note:* This plugin is just a proof of concept for developers. If you rather have a "full markup" scene editor with extended functionality, you might wish to try the [novelyst_editor](https://peter88213.github.io/novelyst_editor) plugin.
 
 ## Requirements
 

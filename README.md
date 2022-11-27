@@ -6,6 +6,8 @@ Edit multiple scenes, if the project is not locked.
 
 For more information, see the [project homepage](https://peter88213.github.io/novelyst_rich_editor) with description and download instructions.
 
+*Note:* This plugin is just a proof of concept for developers. If you rather have a "full markup" scene editor with extended functionality, you might wish to try the [novelyst_editor](https://peter88213.github.io/novelyst_editor) plugin.
+
 ## Development
 
 - The plugin uses the [tkinter text widget](https://tkdocs.com/tutorial/text.html).
