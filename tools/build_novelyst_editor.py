@@ -9,9 +9,9 @@ must be located on the same directory level as the novelyst project.
 For further information see https://github.com/peter88213/novelyst_rich_editor
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
-import os
-import sys
-sys.path.insert(0, f'{os.getcwd()}/../../PyWriter/src')
+# import os
+# import sys
+# sys.path.insert(0, f'{os.getcwd()}/../../PyWriter/src')
 import inliner
 
 SRC = '../src/'
